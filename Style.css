@@ -81,10 +81,10 @@ header {
 
 .wrapper {
     position: fixed;
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    height: 600px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 20px;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
@@ -95,7 +95,7 @@ header {
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
-    z-index: 1;
+    z-index: 2;
 }
 
 .wrapper.active-popup {
@@ -116,6 +116,328 @@ header {
         align-items: center;
         
 }
+
+/*signIN/signUP*/
+
+.form-popup {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    border: 3px solid #2b0446;
+    z-index: 9;
+  }
+.wrapper .container{
+  border: solid;
+  border-color: #fff;
+  border-radius: 20px;
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  background: transparent;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  perspective: 2700px;
+  transition: transform .30s ease;
+  transform: translateX(0);
+}
+.wrapper.active .container{
+    transition: none;
+    transform: translateX(-1000px);
+
+}
+.container .cover{
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 98;
+  transition: all 1s ease;
+  transform-origin: left;
+  transform-style: preserve-3d;
+}
+.container #flip:checked ~ .cover{
+  transform: rotateY(-180deg);
+}
+ .container .cover .front,
+ .container .cover .back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.cover .back{
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover::before,
+.container .cover::after{
+  content: '';
+  position: absolute;
+  border-radius:20px ;
+  height: 100%;
+  width: 100%;
+  background: #7d2ae8;
+  opacity: 1;
+  z-index: 12;
+}
+.container .cover::after{
+  opacity: 0.3;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.container .cover img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.container .cover .text{
+  position: absolute;
+  z-index: 130;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cover .text .text-1,
+.cover .text .text-2{
+  font-size: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+.cover .text .text-2{
+  font-size: 15px;
+  font-weight: 500;
+}
+.container .forms{
+  border: solid;
+  border-color: transparent;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+}
+.container .form-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+.form-content .login-form,
+.form-content .signup-form{
+  width: calc(100% / 2 - 25px);
+}
+.forms .form-content .title{
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+.forms .form-content .title:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #7d2ae8;
+}
+.forms .signup-form  .title:before{
+  width: 20px;
+}
+.forms .form-content .input-boxes{
+  margin-top: 30px;
+}
+.forms .form-content .input-box{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+.form-content .input-box input{
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+  border-color: #7d2ae8;
+}
+.form-content .input-box i{
+  position: absolute;
+  color: #7d2ae8;
+  font-size: 17px;
+}
+.forms .form-content .text{
+    top: 57%;
+    left: 4%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.forms .form-content .text a{
+  text-decoration: none;
+}
+.forms .form-content .text a:hover{
+  text-decoration: underline;
+}
+.forms .form-content .button{
+  color: #fff;
+  margin-top: 40px;
+}
+.forms .form-content .submbutton input{
+  color: #fff;
+  background: #7d2ae8;
+  margin-top: 40px;
+  margin-left: 40px;
+  width: 300px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.forms .form-content .button input:hover{
+  background: #5b13b9;
+}
+.forms .form-content label{
+  color: #5b13b9;
+  cursor: pointer;
+}
+.forms .form-content label:hover{
+  text-decoration: underline;
+}
+.forms .form-content .sign-up-now{
+    
+    text-align: center;
+    margin-top: 25px;
+}
+.forms .form-content .login-now{
+    
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container #flip{
+  display: none;
+}
+@media (max-width: 730px) {
+  .container .cover{
+    display: none;
+  }
+  .form-content .login-form,
+  .form-content .signup-form{
+    width: 100%;
+  }
+  .form-content .signup-form{
+    display: none;
+  }
+  .container #flip:checked ~ .forms .signup-form{
+    display: block;
+  }
+  .container #flip:checked ~ .forms .login-form{
+    display: none;
+  }
+}
+
+/* persinfo*/
+.wrapper .form-box.persinfo{
+    border: solid;
+    border-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    max-width: 850px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 2700px;
+    transform: translateX(1000px);
+    transition: none;
+}
+
+.wrapper.active .form-box.persinfo{
+    transition: transform .30s ease;
+    transform: translateX(0);
+}
+
+.wrapper .form-box.persinfo .questtitle{
+    
+    position: absolute;
+    top: 10%;
+    right: 34%;
+    font-size: 1em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper .form-box.persinfo .form{
+    
+    margin-top: 100px;
+}
+
+.form-box.persinfo .form .quests {
+    /*margin-top: 80px;*/
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 1px 0;
+    position: relative;
+}
+
+.form-box.persinfo .form .quests .leftquests input{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    height: 80%;
+    width: 90%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.form-box.persinfo .form .quests .rightquests input{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    height: 80%;
+    width: 90%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+
+/*home page images and text*/
 
 .image1 img {
     
@@ -248,6 +570,21 @@ header {
 }
 
 /*Question*/
+
+.persinfo{
+    border: solid;
+    border-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    max-width: 850px;
+    width: 100%;
+    background: transparent;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    perspective: 2700px;
+  }
+
+
 
 /*quick info circles*/
 .blob1 {
@@ -430,14 +767,50 @@ header {
 }
 
 /*quick info text and button styling*/
-.text{
-    font-size: 20px;
+.quest1{
+    font-size: 25px;
     text-align: justify;
     color: #fff;
     position: absolute;
     font-family: sans-serif;
-    left: 8%;
+    left: 7%;
     top: 37%;
+}
+.quest2{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 75%;
+    top: 37%;
+}
+.quest3{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 42%;
+    top: 30%;
+}
+.quest4{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 16%;
+    top: 75%;
+}
+.quest5{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 66%;
+    top: 75%;
 }
 
 .neon-button{
