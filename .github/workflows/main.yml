@@ -12,6 +12,5 @@ jobs:
       - name: Copy to host directory
         uses: actions/checkout@v2
       - name: Copy files to destination directory
-      - name: Copy files to destination directory
         run: |
           powershell.exe -Command "Copy-Item -Path C:\Users\jason\actions-runner\_work\Student-Digital-Service* -Destination C:\inetpub\wwwroot -force"
