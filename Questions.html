@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/9f6f890eae.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src="Jobhive.js"></script>
+    <script src="Jobhive.js" defer></script>
     <div class="wrapper">
         <span class="icon-close">
             <i class="fa-solid fa-xmark"></i>
@@ -159,7 +159,7 @@
             <p><b>interview </b></p>
         </div>
         <div class="quest2">
-          <p><b>about yourslef</b></p>
+          <p><b>about yourself</b></p>
         </div>
         <div class="quest3">
           <p><b>team work</b></p>
@@ -186,22 +186,47 @@
         <!-- go to questions button -->
         <!--<button class="neon-button" href="#section-2">Go to questions</button>-->
     </section>
-    <section class="subject-section">
-        <div class="row" onclick="showDifficulty()">
-            <a href="Texts/cs.txt" class="subject-box">Computer Science General</a>
-            <a href="Texts/engineering.txt" class="subject-box">Engineering</a>
-            <a href="Texts/physics.txt" class="subject-box">Physics</a>
+    <div class="quiz-slider">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <div id="image-container" class="image-container">
+          <img src="/Images/CSG.jpg" alt="img">
+          <div class="image-text"><h3>Computer Science General</h3></div>
         </div>
-        <div class="row" onclick="showDifficulty()">
-            <a href="Texts/biology.txt" class="subject-box">Biology</a>
-            <a href="Texts/chemistry.txt" class="subject-box">Chemistry</a>
-            <a href="Texts/maths.txt" class="subject-box">Maths</a>
+        <div id="image-container" class="image-container">
+          <img src="/Images/Engineering.jpg" alt="img">
+          <div class="image-text"><h3>Engineering</h3></div>
         </div>
-        <div class="row" onclick="showDifficulty()">
-            <a href="Texts/english.txt" class="subject-box">English</a>
-            <a href="Texts/accountFinance.txt" class="subject-box">Accounting and Finance</a>
-            <a href="Texts/ai.txt" class="subject-box">Artificial Intelligence</a>
+        <div id="image-container" class="image-container">
+          <img src="/Images/Physics.jpg" alt="img">
+          <div class="image-text"><h3>Physics</h3></div>
         </div>
-    </section>
+        <div id="image-container" class="image-container">
+          <img src="/Images/Biology.jpg" alt="img">
+          <div class="image-text"><h3>Biology</h3></div>
+        </div>     
+        <div id="image-container" class="image-container">
+          <img src="/Images/Chemistry.jpg" alt="img">
+          <div class="image-text"><h3>Chemistry</h3></div>
+        </div>       
+        <div id="image-container" class="image-container">
+          <img src="/Images/Maths.jpg" alt="img">
+          <div class="image-text"><h3>Maths</h3></div>
+        </div>
+        <div id="image-container" class="image-container">
+          <img src="/Images/English.jpg" alt="img">
+          <div class="image-text"><h3>English</h3></div>
+        </div>
+        <div id="image-container" class="image-container">
+          <img src="/Images/Finance.jpg" alt="img">
+          <div class="image-text"><h3>Finance</h3></div>
+        </div>        
+        <div id="image-container" class="image-container">
+          <img src="/Images/AI.jpg" alt="img">
+          <div class="image-text"><h3>Artificial Intelligence</h3></div>
+        </div>
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
 </body>
 </html>
