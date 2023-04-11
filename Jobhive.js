@@ -43,35 +43,60 @@ carousel.addEventListener("mousemove", dragging);
 carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mouseleave", dragStop);
 
-document.getElementById('image-container').addEventListener('click', function() {
-
-})
-
-function getQuestions(subjectName, difficulty) {
-  return fetch('quiz.json')
-    .then(response => response.json())
-    .then(data => {
-      const subject = data.subjects.find(s => s.name === subjectName);
-      if (subject) {
-        const questions = subject.difficulties[difficulty];
-        if (questions) {
-          return questions;
-        }
-      }
-      return [];
-    })
-    .catch(error => console.error(error));
+function toggle() {
+  var blur = document.getElementById('blur');
+  blur.classList.toggle('active')
 }
 
-function displayQuestions(subjectName, difficulty) {
-  getQuestions(subjectName, difficulty)
-    .then(questions => {
-      questions.forEach((question, index) => {
-        console.log(`Question ${index + 1}: ${question.text}`);
-        console.log(`Answers: ${question.answers.join(', ')}`);
-        console.log(`Correct Answer: ${question.correctAnswer}`);
-      });
+function difficultyPopUp() {
+  let bkgrdImg = document.getElementById('blur');
+  bkgrdImg.classList.difficultyPopUp('active')
+}
+
+function accessingJson(subject) {
+  // Get user-selected value for difficulty
+  const difficultyButtons = document.getElementsByClassName('difficulty-button');
+  let difficulty;
+  for (let i = 0; i < difficultyButtons.length; i++) {
+    if (difficultyButtons[i].classList.contains('active')) {
+      difficulty = difficultyButtons[i].textContent;
+      break;
+    }
+  }
+  fetch('quiz.json')
+    .then(res => res.json())
+    .then(data => {
+      userChoice(data, subject, difficulty);
+    })
+    .catch(error => {
+      console.error('Error:', error);
     });
+}
+
+function difficultyToggle() {
+  // Toggle the 'active' class on the clicked difficulty button
+  const difficultyButtons = document.getElementsByClassName('difficulty-button');
+  for (let i = 0; i < difficultyButtons.length; i++) {
+    difficultyButtons[i].classList.difficultyToggle('active');
+  }
+}
+
+function userChoice(data, subject, difficulty) {
+  // Access the chosen subject and difficulty
+  const chosenSubject = data.subjects.find(s => s.name === subject);
+  const chosenDifficulty = chosenSubject.difficulties[difficulty];
+  displayQuestions(chosenSubject, chosenDifficulty);
+}
+
+function displayQuestions(chosenSubject, chosenDifficulty) {
+  // Access the questions based on chosenSubject and chosenDifficulty
+  const questions = chosenSubject.difficulties[chosenDifficulty].questions;
+
+  // Display the questions
+  questions.forEach((question, index) => {
+    console.log(`Question ${index + 1}: ${question.text}`);
+    console.log(`Options: ${question.answers.join(', ')}`);
+  });
 }
 
 // Attach event listeners to the HTML elements representing the subjects and difficulties
