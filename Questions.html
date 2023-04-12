@@ -189,58 +189,56 @@
     <div class="quiz-slider">
       <i id="left" class="fa-solid fa-angle-left"></i>
       <div class="carousel">
-        <div id="blur" class="image-container" onclick="accessingJson('Computer Science General')">
+        <div id="subject1" class="image-container" onclick="startQuiz()">
           <img src="/Images/CSG.jpg" alt="img">
           <div class="image-text"><h3>Computer Science General</h3></div>
         </div>
-        <div id="blur" class="image-container" onclick="accessingJson('Engineering')">
+        <div id="subject2" class="image-container">
           <img src="/Images/Engineering.jpg" alt="img">
           <div class="image-text"><h3>Engineering</h3></div>
         </div>
-        <div id="blur" class="image-container" onclick="accessingJson('Physics')">
+        <div id="subject3" class="image-container">
           <img src="/Images/Physics.jpg" alt="img">
           <div class="image-text"><h3>Physics</h3></div>
         </div>
-        <div id="blur" class="image-container" onclick="accessingJson('Biology')">
+        <div id="subject4" class="image-container">
           <img src="/Images/Biology.jpg" alt="img">
           <div class="image-text"><h3>Biology</h3></div>
         </div>     
-        <div id="blur" class="image-container" onclick="accessingJson('Chemistry')">
+        <div id="subject5" class="image-container">
           <img src="/Images/Chemistry.jpg" alt="img">
           <div class="image-text"><h3>Chemistry</h3></div>
         </div>       
-        <div id="blur" class="image-container" onclick="accessingJson('Maths')">
+        <div id="subject6" class="image-container">
           <img src="/Images/Maths.jpg" alt="img">
           <div class="image-text"><h3>Maths</h3></div>
         </div>
-        <div id="blur" class="image-container" onclick="accessingJson('English')">
+        <div id="subject7" class="image-container">
           <img src="/Images/English.jpg" alt="img">
           <div class="image-text"><h3>English</h3></div>
         </div>
-        <div id="blur" class="image-container" onclick="accessingJson('Accounting and Finance')">
+        <div id="subject8" class="image-container">
           <img src="/Images/Finance.jpg" alt="img">
           <div class="image-text"><h3>Finance</h3></div>
         </div>        
-        <div id="blur" class="image-container" onclick="accessingJson('Artificial Intelligence')">
+        <div id="subject9" class="image-container">
           <img src="/Images/AI.jpg" alt="img">
           <div class="image-text"><h3>Artificial Intelligence</h3></div>
         </div>
       </div>
       <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
-    <div class="difficulty-container" id="blur">
-      <div class="difficulty-content">
-        <h2>Choose Difficulty</h2>
-        <button class="difficulty-button" onclick="toggle()">Easy</button>
-        <button class="difficulty-button" onclick="toggle()">Medium</button>
-        <button class="difficulty-button" onclick="toggle()">Hard</button>
+    <div class="app">
+      <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+        <div id="answer-buttons">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+        <button id="next-btn">Next</button>
       </div>
-    </div>
-    
-    <!-- Question page HTML -->
-    <div id="questionPage" class="question-page">
-      <h2></h2>
-      <ul></ul>
     </div>
 </body>
 </html>

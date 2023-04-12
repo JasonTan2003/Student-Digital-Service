@@ -52,45 +52,31 @@ function difficultyPopUp() {
   let bkgrdImg = document.getElementById('blur');
   bkgrdImg.classList.difficultyPopUp('active')
 }
+document.getElementById("subject1").addEventListener("click", function() {
 
-function accessingJson(subject) {
-  // Get user-selected value for difficulty
-  const difficultyButtons = document.getElementsByClassName('difficulty-button');
-  let difficulty;
-  for (let i = 0; i < difficultyButtons.length; i++) {
-    if (difficultyButtons[i].classList.contains('active')) {
-      difficulty = difficultyButtons[i].textContent;
-      break;
-    }
-  }
+})
+function accessingJson(chosenSubject, chosenDifficulty) {
   fetch('quiz.json')
     .then(res => res.json())
     .then(data => {
-      userChoice(data, subject, difficulty);
+      displayQuestions();
     })
     .catch(error => {
       console.error('Error:', error);
     });
 }
 
-function difficultyToggle() {
-  // Toggle the 'active' class on the clicked difficulty button
-  const difficultyButtons = document.getElementsByClassName('difficulty-button');
-  for (let i = 0; i < difficultyButtons.length; i++) {
-    difficultyButtons[i].classList.difficultyToggle('active');
-  }
-}
-
-function userChoice(data, subject, difficulty) {
+function userChoice(subject, difficulty) {
   // Access the chosen subject and difficulty
   const chosenSubject = data.subjects.find(s => s.name === subject);
   const chosenDifficulty = chosenSubject.difficulties[difficulty];
+  accessingJson(chosenSubject, chosenDifficulty);
   displayQuestions(chosenSubject, chosenDifficulty);
 }
 
 function displayQuestions(chosenSubject, chosenDifficulty) {
   // Access the questions based on chosenSubject and chosenDifficulty
-  const questions = chosenSubject.difficulties[chosenDifficulty].questions;
+  const questions = chosenSubject.difficulties[chosenDifficulty].text;
 
   // Display the questions
   questions.forEach((question, index) => {
