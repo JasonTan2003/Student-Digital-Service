@@ -742,7 +742,7 @@
                 "Hard": [
                     {
                         "text": "Which of the following methods of inventory valuation assumes that the last items purchased are the first items sold?",
-                        "answers": [" LIFO (Last-in, first-out)", "FIFO (First-in, first-out)", "Average cost", "Specific identification"],
+                        "answers": ["LIFO (Last-in, first-out)", "FIFO (First-in, first-out)", "Average cost", "Specific identification"],
                         "correctAnswer": "A"
                     },
                     {
