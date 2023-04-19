@@ -843,6 +843,10 @@ header {
     transform: translateY(185%);
 }
 
+.carousel #image-box {
+    border-radius: 30px;
+}
+
 .image-container {
     position: relative;
     display: inline-block;
@@ -863,6 +867,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     width: 100%;
+    text-align: center;
 }
 
 .image-text h3 {
