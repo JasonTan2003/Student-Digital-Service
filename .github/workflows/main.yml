@@ -11,3 +11,7 @@ jobs:
     steps:
       - name: Copy to host directory
         uses: actions/checkout@v2
+      - name: Copy files to destination directory
+        run: |
+          powershell.exe -Command "Copy-Item -Path G:\actions-runner* -Destination C:\inetpub\wwwroot -force"
+        
