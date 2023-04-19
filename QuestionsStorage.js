@@ -6,7 +6,7 @@ const subjects = [
             { text: "To translate high-level programming languages into machine code", correct: true},
             { text: "To translate machine code into high-level programming languages", correct: false},
             { text: "To debug code", correct: false},
-            { text: "To optimize code for faster execution", correct: false},
+            { text: "To optimize code for faster execution", correct: false}
         ],
 
         question: "Which data structure is best suited for implementing a stack?",
@@ -14,7 +14,7 @@ const subjects = [
             { text: "Array", correct: false},
             { text: "Linked List", correct: true },
             { text: "Queue", correct: false},
-            { text: "Tree", correct: false},
+            { text: "Tree", correct: false}
         ],
 
         question: "Which of the following is NOT a type of loop?",
@@ -22,7 +22,7 @@ const subjects = [
             { text: "While loop", correct: false},
             { text: "For loop", correct: false},
             { text: "Do-while loop", correct: false},
-            { text: "Switch loop", correct: true},
+            { text: "Switch loop", correct: true}
         ],
 
         question: "Which sorting algorithm has the worst time complexity?",
@@ -30,7 +30,7 @@ const subjects = [
             { text: "Bubble sort", correct: true},
             { text: "Insertion sort", correct: false},
             { text: "Selection sort", correct: false},
-            { text: "Quick sort", correct: false},
+            { text: "Quick sort", correct: false}
         ],
 
         question: "Which of the following is NOT an example of a network protocol?",
@@ -38,7 +38,7 @@ const subjects = [
             { text: "TCP/IP", correct: false},
             { text: "HTTP", correct: false},
             { text: "FTP", correct: false},
-            { text: "HTML", correct: true},
+            { text: "HTML", correct: true}
         ],
 
         question: "Which of the following data structures is used to implement a priority queue?",
@@ -46,7 +46,7 @@ const subjects = [
             { text: "Stack", correct: false},
             { text: "Queue", correct: false},
             { text: "Tree", correct: true},
-            { text: "Hash Table", correct: false},
+            { text: "Hash Table", correct: false}
         ],
 
         question: "What is the difference between a binary tree and a binary search tree?",

@@ -13,6 +13,8 @@
 </head>
 <body>
     <script src="Jobhive.js" defer></script>
+    <script src="game.js"></script>
+    <script src="end.js"></script>
     <div class="wrapper">
         <span class="icon-close">
             <i class="fa-solid fa-xmark"></i>
@@ -189,14 +191,14 @@
     <div class="quiz-slider">
       <i id="left" class="fa-solid fa-angle-left"></i>
       <div class="carousel">
-        <div id="subject1" class="image-container" onclick="startQuiz()">
+        <a href="CSG.html" id="subject1" class="image-container">
           <img src="/Images/CSG.jpg" alt="img">
           <div class="image-text"><h3>Computer Science General</h3></div>
-        </div>
-        <div id="subject2" class="image-container">
+        </a>
+        <a href="Engineering.html" id="subject2" class="image-container">
           <img src="/Images/Engineering.jpg" alt="img">
           <div class="image-text"><h3>Engineering</h3></div>
-        </div>
+        </a>
         <div id="subject3" class="image-container">
           <img src="/Images/Physics.jpg" alt="img">
           <div class="image-text"><h3>Physics</h3></div>
@@ -227,18 +229,6 @@
         </div>
       </div>
       <i id="right" class="fa-solid fa-angle-right"></i>
-    </div>
-    <div class="app">
-      <div class="quiz">
-        <h2 id="question">Question goes here</h2>
-        <div id="answer-buttons">
-          <button class="btn"></button>
-          <button class="btn"></button>
-          <button class="btn"></button>
-          <button class="btn"></button>
-        </div>
-        <button id="next-btn">Next</button>
-      </div>
     </div>
 </body>
 </html>

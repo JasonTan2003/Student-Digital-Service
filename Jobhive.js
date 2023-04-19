@@ -52,9 +52,22 @@ function difficultyPopUp() {
   let bkgrdImg = document.getElementById('blur');
   bkgrdImg.classList.difficultyPopUp('active')
 }
-document.getElementById("subject1").addEventListener("click", function() {
+fetch('CSG.txt')
+  .then(response => response.text())
+  .then(data => {
+    const questions = data.split('\n\n').map(questionData => {
+      const [question, ...optionsAndAnswer] = questionData.split('\n');
+      const options = optionsAndAnswer.slice(0, -1);
+      const answer = optionsAndAnswer[optionsAndAnswer.length - 1].slice(1);
+      return {
+        question,
+        options,
+        answer,
+      };
+    });
+    console.log(questions);
+});
 
-})
 function accessingJson(chosenSubject, chosenDifficulty) {
   fetch('quiz.json')
     .then(res => res.json())
