@@ -1,9 +1,15 @@
 <?php
-// connect to the database
-$name = $_POST['name'];
-$password = $_POST['password'];
-$email = $_POST['email'];
-$conn = new mysqli(server=localhost;user=root;database=jobhive;port=3306;);
+$host = 'localhost'; // replace with your database host
+$dbname = 'jobhive'; // replace with your database name
+$username = 'root'; // replace with your database username
+$password = ''; // replace with your database password
+
+// Create a new PDO object to connect to the database
+try {
+  $dbh = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+} catch (PDOException $e) {
+  die("Error connecting to database: " . $e->getMessage());
+}
 
 // check connection
 if ($conn->connect_error) {
