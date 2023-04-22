@@ -1,24 +1,31 @@
 <?php
-// Get the form data
+// connect to the database
 $name = $_POST['name'];
-$surname = $_POST['surname'];
 $password = $_POST['password'];
 $email = $_POST['email'];
+$conn = new mysqli($jobhive,$jobhive);
 
-// Create a new PDO object to connect to the database
-$dbh = new PDO('mysql:host=localhost;dbname=jobhive;charset=utf8');
+// check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 
-// Prepare the INSERT statement
-$stmt = $dbh->prepare('INSERT INTO users (name,password, email) VALUES (:name,:password, :email)');
+// get form data
+$name = $_POST['name'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-// Bind the parameters and execute the statement
-$stmt->bindParam(':name', $name);
-$stmt->bindParam(':surname', $surname);
-$stmt->bindParam(':password', $password);
-$stmt->bindParam(':email', $email);
-$stmt->execute();
+// hash password for security
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-// Redirect the user to the login page
-header('Location: login.html');
-exit();
+// insert data into database
+$sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$hashed_password')";
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// close connection
+$conn->close();
 ?>
