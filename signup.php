@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $password = $_POST['password'];
 $email = $_POST['email'];
-$conn = new mysqli($jobhive,$jobhive);
+$conn = new mysqli(server=localhost;user=root;database=jobhive;port=3306;);
 
 // check connection
 if ($conn->connect_error) {
