@@ -1,0 +1,894 @@
+{
+    "subjects": [
+        {
+            "name": "Computer Science General",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "What is the primary function of a compiler?",
+                        "answers": ["To translate high-level programming languages into machine code", 
+                                    "To translate machine code into high-level programming languages",  
+                                    "To debug code", 
+                                    "To optimize code for faster execution"
+                                    ],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which data structure is best suited for implementing a stack?",
+                        "answers": ["Array", "Linked List", "Queue", "Tree"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which of the following is NOT a type of loop?",
+                        "answers": ["While loop", "For loop", "Do-while loop", "Switch loop"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which sorting algorithm has the worst time complexity?",
+                        "answers": ["Bubble sort", "Insertion sort", "Selection sort", "Quick sort"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following is NOT an example of a network protocol?",
+                        "answers": ["TCP/IP", "HTTP", "FTP", "HTML"],
+                        "correctAnswer": "D"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "Which of the following data structures is used to implement a priority queue?",
+                        "answers": ["Stack", "Queue", "Tree", "Hash Table"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the difference between a binary tree and a binary search tree?",
+                        "answers": ["A binary tree can have duplicate values, while a binary search tree cannot", 
+                                    "A binary search tree has the property that the left child is always less than the parent, while the right child is always greater than the parent",
+                                    "A binary tree is always balanced, while a binary search tree is not",
+                                    "A binary search tree is a type of binary tree"
+                                   ],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the difference between an interpreter and a compiler?",
+                        "answers": ["An interpreter translates code into machine code, while a compiler executes code directly", 
+                                    "A compiler translates code into machine code, while an interpreter executes code directly",
+                                    "An interpreter is faster than a compiler",
+                                    "A compiler is easier to use than an interpreter"
+                                   ],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is an API?",
+                        "answers": ["An acronym for \"Application Performance Interface\"", 
+                                    "A type of programming language",
+                                    "A set of functions and procedures that allow the creation of applications that access the features or data of an operating system, application, or other service",
+                                    "A database management system"
+                                ],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "Which of the following is NOT a fundamental data type in Python?",
+                        "answers": ["Integer", "Float", "String", "Complex"],
+                        "correctAnswer": "D"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "Which of the following is an example of a non-deterministic algorithm?",
+                        "answers": ["Dijkstra's algorithm", "Prim's algorithm", "Kruskal's algorithm", "Monte Carlo algorithm"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which of the following is NOT a type of database normalization?",
+                        "answers": ["First normal form", "Second normal form", "Third normal form", "Fourth normal form"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which of the following algorithms is used to find the longest common subsequence of two strings?",
+                        "answers": ["Breadth-first search", "Depth-first search", "Dijkstra's algorithm", "Longest Common Subsequence algorithm"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which of the following is a property of a recursive function?",
+                        "answers": ["It must have a base case", "It must have a loop", "It must have a return statement", "It must have an iterative counterpart"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following is NOT a type of machine learning?",
+                        "answers": ["Supervised learning", "Unsupervised learning", "Reinforcement learning", "Parallel learning"],
+                        "correctAnswer": "D"
+                    }
+                ]      
+            }
+        },
+        {
+            "name": "Engineering",
+            "difficulties": { 
+                "Easy": [
+                    {
+                        "text": "What is the term used to describe the ratio of output power to input power in an electrical circuit?",
+                        "answers": ["Current", "Resistance", "Voltage", "Efficiency"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "What is the term used to describe the ratio of force to area in a mechanical system?",
+                        "answers": ["Velocity", "Acceleration", "Pressure", "Torque"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the process called when a solid changes directly to a gas without going through the liquid phase?",
+                        "answers": ["Sublimation", "Melting", "Evaporation", "Condensation"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the process called when a liquid changes to a gas?",
+                        "answers": ["Sublimation", "Melting", "Evaporation", "Condensation"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the unit used to measure force in the International System of Units (SI)?",
+                        "answers": ["Joule", "Newton", "Watt", "Ampere"],
+                        "correctAnswer": "B"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "What is the term used to describe the amount of energy stored in a material when it is deformed?",
+                        "answers": ["Strain", "Stress", "Torsion", "Elasticity"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which law states that the total pressure of a gas mixture is equal to the sum of the partial pressures of each component in the mixture?",
+                        "answers": ["Boyle's law", "Charles's law", "Avogadro's law", "Dalton's law"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "What is the process called when a gas changes directly to a solid without going through the liquid phase?",
+                        "answers": ["Condensation", "Freezing", "Deposition", "Vaporization"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the term used to describe the ratio of the actual mechanical advantage of a machine to its theoretical mechanical advantage?",
+                        "answers": ["Efficiency", "Power", "Work", "Friction"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the amount of heat required to raise the temperature of one gram of a substance by one degree Celsius?",
+                        "answers": ["Heat Capacity", "Enthalpy", "Entropy", "Specific heat capacity"],
+                        "correctAnswer": "D"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "What is the term used to describe the bending of light as it passes through a medium with a varying refractive index?",
+                        "answers": ["Diffraction", "Dispersion", "Interference", "Refraction"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which thermodynamic process occurs when heat is added to a system and work is done by the system on its surroundings?",
+                        "answers": ["Isobaric process", "Isothermal process", "Adiabatic process", "Isochoric process"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the term used to describe the tendency of a force to rotate an object about an axis?",
+                        "answers": ["Torque", "Energy", "Power", "Work"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the rate of change of angular velocity with respect to time?",
+                        "answers": ["Angular displacement", "Angular velocity", "Angular acceleration", "Linear accelration"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the term used to describe the resistance of a fluid to flow?",
+                        "answers": ["Viscosity", "Tensile strength", "Surface tension", "Cohesion"],
+                        "correctAnswer": "A"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Physics",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "What is the term used to describe the amount of matter in an object?",
+                        "answers": ["Weight", "Mass", "Volume", "Density"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the term used to describe the amount of work done on an object per unit of time?",
+                        "answers": ["Work", "Power", "Energy", "Force"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the term used to describe the force that opposes motion between two surfaces in contact?",
+                        "answers": ["Friction", "Gravity", "Inertia", "Acceleration"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the transfer of thermal energy from one object to another due to a difference in temperature?",
+                        "answers": ["Convection", "Radiation", "Conduction", "Expansion"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the term used to describe the amount of matter in a given volume of a substance?",
+                        "answers": ["Mass", "Density", "Volume", "Weight"],
+                        "correctAnswer": "B"
+                    }  
+                ],
+                "Medium": [
+                    {
+                        "text": "What is the term used to describe the force required to accelerate an object with mass?",
+                        "answers": ["Inertia", "Friction", "Gravity", "Force"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "What is the term used to describe the energy stored in an object due to its position or configuration?",
+                        "answers": ["Kinetic Energy", "Potential Energy", "Mechanical Energy", "Thermal Energy"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the term used to describe the change in position of an object over time?",
+                        "answers": ["Velocity", "Acceleration", "Speed", "Momentum"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the resistance of an object to changes in its motion?",
+                        "answers": ["Inertia", "Momentum", "Velocity", "Acceleration"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the force of attraction between two objects with mass?",
+                        "answers": ["Friction", "Gravity", "Inertia", "Acceleration"],
+                        "correctAnswer": "B"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "What is the term used to describe the tendency of a force to rotate an object around an axis?",
+                        "answers": ["Torque", "Kinetic Energy", "Angular momentum", "Centripetal force"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the ratio of the velocity of an object to the speed of sound in the surrounding medium?",
+                        "answers": ["Match number", "Reynolds number", "Froude number", "Weber number"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the bending of light when it passes through a medium of different density?",
+                        "answers": ["Reflection", "Refraction", "Diffraction", "Interference"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the term used to describe the resistance of a fluid to flow?",
+                        "answers": ["Viscosity", "Inertia", "Buoyancy", "Turbulence"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the force per unit area acting on a surface?",
+                        "answers": ["Pressure", "Temperature", "Volume", "Heat"],
+                        "correctAnswer": "A"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Chemistry",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "What is the chemical symbol for oxygen?",
+                        "answers": ["N", "O", "H", "C"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the process of converting a liquid to a gas called?",
+                        "answers": ["Freezing", "Boiling", "Melting", "Condensation"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the term used to describe the smallest unit of an element that retains the chemical properties of that element?",
+                        "answers": ["Atom", "Molecule", "Compound", "Ion"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe a substance that cannot be broken down into simpler substances by chemical means?",
+                        "answers": ["Element", "Compound", "Molecule", "Ion"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe a substance composed of two or more elements in a fixed proportion?",
+                        "answers": ["Compound", "Mixture", "Element", "Solution"],
+                        "correctAnswer": "A"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "What is the term used to describe the amount of solute present in a given amount of solvent or solution?",
+                        "answers": ["Molarity", "Molality", "Concentration", "Dilution"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the term used to describe the energy required to remove an electron from an atom or ion in the gaseous state?",
+                        "answers": ["Ionization energy", "Electron affinity", "Electronegativity", "Bond dissociation energy"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe a reaction in which two or more substances combine to form a single product?",
+                        "answers": ["Synthesis", "Decomposotion", "Combustion", "Acid-base reaction"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe a solution in which the concentration of the solute is higher than its solubility at a given temperature?",
+                        "answers": [" Saturated solution", "Unsaturated solution", "Supersaturated solution", "Concentrated solution"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the term used to describe the quantity of heat required to raise the temperature of one gram of a substance by one degree Celsius?",
+                        "answers": ["Specific heat capacity", "Heat of fusion", "Heat of vaporization", "Heat of reaction"],
+                        "correctAnswer": "A"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "What is the term used to describe the phenomenon in which a reaction proceeds in such a way that a product of the reaction is able to catalyze the reaction itself?",
+                        "answers": ["Autocatalysis", "Heterocatalysis", "Enzymatic catalysis", "Photochemical catalysis"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the quantity of an ion in solution that reacts completely with one mole of another ion in a chemical reaction?",
+                        "answers": ["Normality", "Molarity", "Molality", "Concentration"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe a substance that can accept a pair of electrons from a Lewis base?",
+                        "answers": ["Lewis acid", "Lewis base", "Bronsted-Lowry acid", " Bronsted-Lowry base"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe the force per unit area exerted by a gas on a surface?",
+                        "answers": ["Pressure", "Temperature", "Volume", "Density"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the term used to describe a reaction in which a single reactant is converted into multiple products?",
+                        "answers": ["Disproportionation", "Redox reaction", " Metathesis reaction", "Polymerization"],
+                        "correctAnswer": "C"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Biology",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "What is the process by which cells use glucose to produce ATP, the energy currency of the cell?",
+                        "answers": ["Photosynthesis", "Respiration", "Fermentation", "Biosynthesis"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which organelle is responsible for packaging and distributing proteins in the cell?",
+                        "answers": ["Mitochondria", "Golgi apparatus", "Endoplasmic reticulum", "Lysosome"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the term used to describe the smallest unit of life that can carry out all of the functions necessary for life?",
+                        "answers": ["Molecule", "Cell", "Tissue", "Organ"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the term used to describe the process by which genetic information is passed from parent to offspring?",
+                        "answers": ["Meiosis", "Mitosis", "Replication", "Inheritance"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which macromolecule is responsible for storing genetic information in cells?",
+                        "answers": ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
+                        "correctAnswer": "D"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "What is the name of the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen?",
+                        "answers": ["Respiration", "Photosynthesis", "Fermentation", "Digestion"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which organelle is responsible for converting light energy into chemical energy during photosynthesis?",
+                        "answers": ["Chloroplasts", "Mitochondria", "Endoplasmic reticulum", "Nucleus"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which type of tissue is responsible for transmitting electrical signals throughout the body?",
+                        "answers": ["Epithelial tissue", "Muscle tissue", "Nervous tissue", "Connective tissue"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the name of the process by which DNA is used to make RNA?",
+                        "answers": ["Replication", "Transcription", "Translation", "Mutation"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the name of the process by which the genetic material from two different parents combines to produce a new individual?",
+                        "answers": ["Mitosis", "Meiosis", "Fertilization", "Replication"],
+                        "correctAnswer": "C"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "What is the difference between facilitated diffusion and active transport?",
+                        "answers": ["Facilitated diffusion requires energy while active transport does not",
+                                    " Facilitated diffusion moves molecules against their concentration gradient while active transport moves molecules with their concentration gradient",
+                                    " Facilitated diffusion is a type of passive transport while active transport is a type of active transport"
+                                   ],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What are the three stages of cellular respiration and where do they occur in the cell?",
+                        "answers": ["Glycolysis in the cytoplasm, the Krebs cycle in the mitochondria, and oxidative phosphorylation in the cytoplasm",
+                                    "Glycolysis in the mitochondria, the Krebs cycle in the cytoplasm, and oxidative phosphorylation in the mitochondria",
+                                    "Glycolysis in the cytoplasm, the Krebs cycle in the mitochondria, and oxidative phosphorylation in the mitochondria"
+                                   ],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the function of ribosomes in the cell?",
+                        "answers": ["To synthesize proteins", "To produce ATP", "To store genetic information"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the difference between mitosis and meiosis?",
+                        "answers": ["Mitosis produces haploid cells while meiosis produces diploid cells",
+                                    " Mitosis involves one division while meiosis involves two divisions",
+                                    " Mitosis produces genetically identical daughter cells while meiosis produces genetically diverse daughter cells"],
+                        "correctAnswer": "C"
+                    },  
+                    {
+                        "text": "What is the central dogma of molecular biology?",
+                        "answers": [" DNA is transcribed into RNA which is then translated into protein",
+                                    "RNA is transcribed into DNA which is then translated into protein",
+                                    " Protein is transcribed into RNA which is then translated into DNA"],
+                        "correctAnswer": "A"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Maths",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "What is the value of x in the equation 3x + 5 = 14?",
+                        "answers": ["3", "4", "6", "9"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the slope of a horizontal line?",
+                        "answers": ["0", "1", "-1", "Undefined"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the value of pi (π) to two decimal places?",
+                        "answers": ["3.14", "3.15", "3.16", "3.17"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the square root of 49?",
+                        "answers": ["4", "5", "6", "7"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "What is the sum of the interior angles of a triangle?",
+                        "answers": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"], 
+                        "correctAnswer": "B"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "A store is having a 20% off sale on all items. If a $50 item is on sale, what is the sale price?",
+                        "answers": ["$10", "$20", "$30", "$40"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "The sum of three consecutive even integers is 132. What is the largest of the three integers?",
+                        "answers": ["40", "42", "44", "46"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "If x + y = 12 and x - y = 4, what is the value of x?",
+                        "answers": ["8", "10", "12", "16"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the slope of a line perpendicular to a line with slope 3/5?",
+                        "answers": ["-3/5", "-5/3", "3/5", "5/3"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Let P be a point outside a circle with center O and radius 6. A tangent line to the circle through P intersects a radius drawn from O at point A. If the length of AP is 8, what is the area of the circle? (Round your answer to the nearest hundredth)",
+                        "answers": ["113.10", "125.66", "144.00", "201.06"],
+                        "correctAnswer": "A"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}",
+                        "answers": ["0", "1", "2", "Does not exist"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the equation of the line passing through the points (2, 3) and (4, 7)?",
+                        "answers": ["y = 2x + 1", "y = 4x - 5", "y = 2x + 5", "y = 4x - 1"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the derivative of $f(x) = 2x^3 - 4x + 1$",
+                        "answers": ["f'(x) = 6x - 4", "f'(x) = 6x^2 - 4", "f'(x) = 6x^2 - 4x", "f'(x) = 6x^2 - 4x + 1"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the solution to the equation $x^2 + 5x + 6 = 0$",
+                        "answers": ["x = -6 or x = -1", "x = -2 or x = -3", "x = -6 or x = -2", "x = -4 or x = -2"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the value of sin(60°)?",
+                        "answers": ["1/2", "√3/2", "1", "0"],
+                        "correctAnswer": "B"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Engish",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "Which of the following is a noun?",
+                        "answers": ["Run", "Quickly", "House", "Beautifully"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "Which sentence is written correctly?",
+                        "answers": ["Their going to the park later.",
+                                    "There going to the park later.",
+                                    "They're going to the park later.",
+                                    "Theres going to the park later."],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "Which word is a synonym for \"happy\"?",
+                        "answers": ["Sad", "Joyful", "Angry", "Depressed"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which sentence is written in the past tense?",
+                        "answers": ["I am going to the store.",
+                                    "I go to the store.",
+                                    "I will go to the store.",
+                                    "I went to the store."
+                                    ],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which sentence is an example of a question?",
+                        "answers": ["The sun is shining.",
+                                    "She sings beautifully.",
+                                    "Are you going to the party tonight?",
+                                    "They always dance together."
+                                   ],
+                        "correctAnswer": "C"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "Which of the following sentences contains a dangling modifier?",
+                        "answers": ["After finishing his homework, the TV was turned on",
+                                    "The car that was parked in front of the building was mine",
+                                    "Looking out the window, the sun was shining brightly",
+                                    "Walking down the street, the flowers caught her eye"
+                                   ],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "Which of the following sentences is written in the passive voice?",
+                        "answers": ["The dog chased the cat",
+                                    "The cat was chased by the dog", 
+                                    "I wrote a letter to my friend",
+                                    "My friend received my letter"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which of the following words is a synonym for \"ubiquitous\"?",
+                        "answers": ["rare", "prevalent", "obscure", "scarce"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which of the following sentences contains a dependent clause?",
+                        "answers": ["The dog barked at the mailman",
+                                    "While I was cooking dinner, the phone rang",
+                                    "She sings beautifully",
+                                    "The sun was setting over the horizon"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which of the following is an example of a hyperbole?",
+                        "answers": ["The book was so boring, I fell asleep after one page",
+                                    "The room was as dark as a cave",
+                                    "The flowers swayed gently in the breeze",
+                                    "The rain tapped on the window pane"],
+                        "correctAnswer": "A"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "Which of the following is an example of an oxymoron?",
+                        "answers": ["jumbo shrimp", "pretty ugly", "silent scream", "virtual reality"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following sentences is written in the subjunctive mood?",
+                        "answers": ["If I were you, I would take that job",
+                                    "She is going to the store",
+                                    "He asked me if I had finished the project",
+                                    " I wish I could have gone to the concert"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following is an example of metonymy?",
+                        "answers": ["The pen is mightier than the sword",
+                                    "The White House announced a new policy",
+                                    "All hands on deck!",
+                                    "The Crown refused to negotiate"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which of the following is an example of anaphora?",
+                        "answers": ["She walked to the store. She bought some milk. She came back home",
+                                    "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness...",
+                                    "The sky was blue, and the grass was green",
+                                    "He sang a song, and she danced to it"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "Which of the following is an example of a syllogism?",
+                        "answers": ["All dogs are animals. Charlie is a dog. Therefore, Charlie is an animal",
+                                    "She is good at math. Therefore, she will be a great scientist",
+                                    "He is a vegetarian. Therefore, he does not eat meat",
+                                    "It rained yesterday. Therefore, it will rain today"],
+                        "correctAnswer": "A"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Accounting and Finance",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "Which financial statement reports a company's revenues and expenses?",
+                        "answers": ["Balance sheet", "Income statement", "Cash flow statement", "Statement of retained earnings"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the purpose of a journal entry?",
+                        "answers": ["To record the details of a business transaction in the accounting system",
+                                    "To prepare financial statements",
+                                    "To calculate the company's tax liability",
+                                    "To communicate with external stakeholders"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which accounting equation is correct?",
+                        "answers": ["Assets = Liabilities - Equity", 
+                                    "Assets + Equity = Liabilities",
+                                    "Assets - Liabilities = Equity",
+                                    " Liabilities - Equity = Assets"],
+                        "correctAnswer": "C"
+                    },
+                    {
+                        "text": "What is the difference between accounts receivable and accounts payable?",
+                        "answers": ["Accounts receivable is money owed to the company, while accounts payable is money the company owes to others",
+                                    "Accounts payable is money owed to the company, while accounts receivable is money the company owes to others",
+                                    "Accounts receivable and accounts payable are the same thing",
+                                    "None of the above"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the purpose of an audit?",
+                        "answers": ["To ensure the accuracy and completeness of a company's financial statements",
+                                    "To prepare tax returns for the company",
+                                    "To review employee performance",
+                                    "To evaluate the company's marketing strategy"],
+                        "correctAnswer": "A"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "Which of the following is NOT a type of financial statement?",
+                        "answers": ["Balance sheet", "Income statement", "Cash flow statement", "Sales statement"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which accounting method recognizes revenues and expenses when they are earned or incurred, regardless of when they are received or paid?",
+                        "answers": ["Accrual accounting", "Cash accounting", "Deferred accounting", "Liability accounting"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the primary purpose of a bank reconciliation?",
+                        "answers": ["To ensure that all bank transactions are recorded in the company's accounting system",
+                                    " To identify any discrepancies between the company's accounting records and the bank's records",
+                                    "To calculate the company's net income for the period",
+                                    " To track the company's inventory levels"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the difference between accounts receivable and accounts payable?",
+                        "answers": ["Accounts receivable is money owed to the company, while accounts payable is money the company owes to others",
+                                    "Accounts receivable is money the company owes to others, while accounts payable is money owed to the company",
+                                    "Accounts receivable represents assets on the balance sheet, while accounts payable represents liabilities",
+                                    "Accounts receivable represents liabilities on the balance sheet, while accounts payable represents assets"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following financial ratios measures a company's ability to pay off its short-term debt?",
+                        "answers": ["Debt-to-equity ratio", "Current ratio", "Gross margin ratio", "Return on equity ratio"],
+                        "correctAnswer": "B"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text": "Which of the following methods of inventory valuation assumes that the last items purchased are the first items sold?",
+                        "answers": ["LIFO (Last-in, first-out)", "FIFO (First-in, first-out)", "Average cost", "Specific identification"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following financial statements is used to calculate a company's return on investment (ROI)?",
+                        "answers": ["Income statement", "Balance sheet", "Cash flow statement", "Statement of retained earnings"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following financial ratios measures a company's ability to meet its long-term debt obligations?",
+                        "answers": ["Debt-to-equity ratio", "Quick ratio", "Return on investment (ROI) ratio", "Times interest earned ratio"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "Which of the following methods of depreciation charges the same amount of depreciation expense each year of the asset's useful life?",
+                        "answers": ["Straight-line depreciation", "Double-declining balance depreciation", "Units of production depreciation", "MACRS (Modified Accelerated Cost Recovery System) depreciation"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following financial statements is used to calculate a company's gross profit margin?",
+                        "answers": ["Income statement", "Balance sheet", "Cash flow statement", "Statement of retained earnings"],
+                        "correctAnswer": "A"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Artificial Intelligence",
+            "difficulties": {
+                "Easy": [
+                    {
+                        "text": "Which of the following is NOT a type of artificial intelligence?",
+                        "answers": ["Machine learning", "Natural language processing", "Robotics", "Data visualization"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "What is the difference between supervised and unsupervised learning?",
+                        "answers": ["Supervised learning is when the machine is given labelled data to learn from, while unsupervised learning is when the machine is not given any labels",
+                                    "Supervised learning is when the machine learns on its own without any guidance, while unsupervised learning is when the machine is given a set of specific instructions to follow",
+                                    "Supervised learning is when the machine is given unstructured data to learn from, while unsupervised learning is when the machine is given structured data",
+                                    "There is no difference between supervised and unsupervised learning."],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "Which of the following is an example of a natural language processing task?",
+                        "answers": ["Classifying images", "Identifying fraudulent transactions", "Predicting stock prices", "Recognizing speech patterns"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "What is a neural network?",
+                        "answers": ["A type of computer hardware used in artificial intelligence",
+                                    "A type of software that can learn from data",
+                                    "A type of algorithm used in data analysis",
+                                    "A type of database used to store large amounts of data"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the purpose of reinforcement learning?",
+                        "answers": ["To learn from labelled data", "To learn from unstructured data", "To optimize a machine's decision-making process through trialand-error", "To analyse large datasets and identify patterns"],
+                        "correctAnswer": "C"
+                    }
+                ],
+                "Medium": [
+                    {
+                        "text": "What is the difference between classification and regression in machine learning?",
+                        "answers": ["Classification is the process of predicting a categorical label, while regression is the process of predicting a continuous value",
+                                    "Classification is the process of predicting a continuous value, while regression is the process of predicting a categorical label",
+                                    "Classification and regression are the same process, but with different names",
+                                    "Classification is the process of identifying patterns in data, while regression is the process of transforming data into a more usable format"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the difference between overfitting and underfitting in machine learning?",
+                        "answers": ["Overfitting occurs when a model is too complex and learns the noise in the training data, while underfitting occurs when a model is too simple and does not capture the underlying patterns in the data",
+                                    "Overfitting occurs when a model is too simple and does not capture the underlying patterns in the data, while underfitting occurs when a model is too complex and learns the noise in the training data",
+                                    "Overfitting and underfitting are the same thing, but with different names",
+                                    "Overfitting occurs when a model is too complex and captures the underlying patterns in the data, while underfitting occurs when a model is too simple and captures only the noise in the data"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the difference between a generative model and a discriminative model in machine learning?",
+                        "answers": ["A generative model generates new data, while a discriminative model discriminates between different classes of data",
+                                    "A generative model discriminates between different classes of data, while a discriminative model generates new data",
+                                    "A generative model and a discriminative model are the same thing, but with different names",
+                                    " A generative model generates new data based on the underlying distribution of the data, while a discriminative model learns the boundary between different classes of data"],
+                        "correctAnswer": "D"
+                    },
+                    {
+                        "text": "What is the purpose of a convolutional neural network (CNN) in computer vision?",
+                        "answers": ["To learn features of images by convolving filters over the image and down-sampling the result",
+                                    "To classify images by comparing them to a database of pre-existing images",
+                                    "To generate new images by sampling from a learned distribution",
+                                    "To segment images into regions with different semantic meanings"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the difference between a decision tree and a random forest in machine learning?",
+                        "answers": ["A decision tree is a single tree-like model, while a random forest is an ensemble of many decision trees",
+                                    " A decision tree is an ensemble of many random forests, while a random forest is a single tree-like model",
+                                    "A decision tree and a random forest are the same thing, but with different names",
+                                    "A decision tree and a random forest are both single tree-like models, but the random forest is trained using random subsets of the data"],
+                        "correctAnswer": "A"
+                    }
+                ],
+                "Hard": [
+                    {
+                        "text":"What is the difference between a Boltzmann machine and a Hopfield network in neural networks?",
+                        "answers": ["Boltzmann machines are unsupervised learning models, while Hopfield networks are supervised learning models",
+                                    "Boltzmann machines are feedforward neural networks, while Hopfield networks are recurrent neural networks",
+                                    "Boltzmann machines are used for regression problems, while Hopfield networks are used for classification problems",
+                                    "Boltzmann machines and Hopfield networks are the same thing, but with different names"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the difference between a Markov decision process (MDP) and a Partially observable Markov decision process (POMDP) in reinforcement learning?",
+                        "answers": ["MDPs assume that the current state of the environment is fully observable, while POMDPs assume that the current state is partially observable",
+                                    "MDPs are used for continuous action spaces, while POMDPs are used for discrete action spaces",
+                                    "MDPs use model-based methods, while POMDPs use model-free methods",
+                                    "MDPs and POMDPs are the same thing, but with different names"],
+                        "correctAnswer": "A"
+                    },
+                    {
+                        "text": "What is the difference between a convolutional neural network (CNN) and a recurrent neural network (RNN) in deep learning?",
+                        "answers": ["CNNs are used for image and video processing, while RNNs are used for natural language processing",
+                                    "CNNs use convolutional layers for feature extraction, while RNNs use recurrent layers for temporal processing",
+                                    "CNNs are supervised learning models, while RNNs are unsupervised learning models",
+                                    "CNNs and RNNs are the same thing, but with different names"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the difference between a support vector machine (SVM) and a decision tree in machine learning?",
+                        "answers": ["SVMs are used for regression problems, while decision trees are used for classification problems",
+                                    "SVMs use decision boundaries to separate different classes, while decision trees use a hierarchical tree structure to make decisions",
+                                    "SVMs are unsupervised learning models, while decision trees are supervised learning models",
+                                    "SVMs and decision trees are the same thing, but with different names"],
+                        "correctAnswer": "B"
+                    },
+                    {
+                        "text": "What is the difference between a long-term and short-term memory in neural networks?",
+                        "answers": ["Long-term memory is used for storing data over an extended period of time, while shortterm memory is used for storing data for a short period of time",
+                                    "Long-term memory is used for unsupervised learning, while short-term memory is used for supervised learning",
+                                    "Long-term memory refers to the structure of a neural network, while short-term memory refers to the activation of neurons",
+                                    "Long-term memory and short-term memory are the same thing, but with different names"],
+                        "correctAnswer": "A"
+                    }
+                ]
+            }
+        }
+    ]
+}
