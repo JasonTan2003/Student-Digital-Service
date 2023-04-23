@@ -3,7 +3,7 @@
         {
             "name": "Computer Science General",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "What is the primary function of a compiler?",
                         "answers": ["To translate high-level programming languages into machine code", 
@@ -32,9 +32,7 @@
                         "text": "Which of the following is NOT an example of a network protocol?",
                         "answers": ["TCP/IP", "HTTP", "FTP", "HTML"],
                         "correctAnswer": "D"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "Which of the following data structures is used to implement a priority queue?",
                         "answers": ["Stack", "Queue", "Tree", "Hash Table"],
@@ -71,9 +69,7 @@
                         "text": "Which of the following is NOT a fundamental data type in Python?",
                         "answers": ["Integer", "Float", "String", "Complex"],
                         "correctAnswer": "D"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text": "Which of the following is an example of a non-deterministic algorithm?",
                         "answers": ["Dijkstra's algorithm", "Prim's algorithm", "Kruskal's algorithm", "Monte Carlo algorithm"],
@@ -105,7 +101,7 @@
         {
             "name": "Engineering",
             "difficulties": { 
-                "Easy": [
+                "questions": [
                     {
                         "text": "What is the term used to describe the ratio of output power to input power in an electrical circuit?",
                         "answers": ["Current", "Resistance", "Voltage", "Efficiency"],
@@ -130,9 +126,7 @@
                         "text": "What is the unit used to measure force in the International System of Units (SI)?",
                         "answers": ["Joule", "Newton", "Watt", "Ampere"],
                         "correctAnswer": "B"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "What is the term used to describe the amount of energy stored in a material when it is deformed?",
                         "answers": ["Strain", "Stress", "Torsion", "Elasticity"],
@@ -157,9 +151,7 @@
                         "text": "What is the term used to describe the amount of heat required to raise the temperature of one gram of a substance by one degree Celsius?",
                         "answers": ["Heat Capacity", "Enthalpy", "Entropy", "Specific heat capacity"],
                         "correctAnswer": "D"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text": "What is the term used to describe the bending of light as it passes through a medium with a varying refractive index?",
                         "answers": ["Diffraction", "Dispersion", "Interference", "Refraction"],
@@ -191,7 +183,7 @@
         {
             "name": "Physics",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "What is the term used to describe the amount of matter in an object?",
                         "answers": ["Weight", "Mass", "Volume", "Density"],
@@ -216,9 +208,7 @@
                         "text": "What is the term used to describe the amount of matter in a given volume of a substance?",
                         "answers": ["Mass", "Density", "Volume", "Weight"],
                         "correctAnswer": "B"
-                    }  
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "What is the term used to describe the force required to accelerate an object with mass?",
                         "answers": ["Inertia", "Friction", "Gravity", "Force"],
@@ -243,9 +233,7 @@
                         "text": "What is the term used to describe the force of attraction between two objects with mass?",
                         "answers": ["Friction", "Gravity", "Inertia", "Acceleration"],
                         "correctAnswer": "B"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text": "What is the term used to describe the tendency of a force to rotate an object around an axis?",
                         "answers": ["Torque", "Kinetic Energy", "Angular momentum", "Centripetal force"],
@@ -277,7 +265,7 @@
         {
             "name": "Chemistry",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "What is the chemical symbol for oxygen?",
                         "answers": ["N", "O", "H", "C"],
@@ -302,9 +290,7 @@
                         "text": "What is the term used to describe a substance composed of two or more elements in a fixed proportion?",
                         "answers": ["Compound", "Mixture", "Element", "Solution"],
                         "correctAnswer": "A"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "What is the term used to describe the amount of solute present in a given amount of solvent or solution?",
                         "answers": ["Molarity", "Molality", "Concentration", "Dilution"],
@@ -329,9 +315,7 @@
                         "text": "What is the term used to describe the quantity of heat required to raise the temperature of one gram of a substance by one degree Celsius?",
                         "answers": ["Specific heat capacity", "Heat of fusion", "Heat of vaporization", "Heat of reaction"],
                         "correctAnswer": "A"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text": "What is the term used to describe the phenomenon in which a reaction proceeds in such a way that a product of the reaction is able to catalyze the reaction itself?",
                         "answers": ["Autocatalysis", "Heterocatalysis", "Enzymatic catalysis", "Photochemical catalysis"],
@@ -363,7 +347,7 @@
         {
             "name": "Biology",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "What is the process by which cells use glucose to produce ATP, the energy currency of the cell?",
                         "answers": ["Photosynthesis", "Respiration", "Fermentation", "Biosynthesis"],
@@ -388,9 +372,7 @@
                         "text": "Which macromolecule is responsible for storing genetic information in cells?",
                         "answers": ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
                         "correctAnswer": "D"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "What is the name of the process by which plants use sunlight, water, and carbon dioxide to produce glucose and oxygen?",
                         "answers": ["Respiration", "Photosynthesis", "Fermentation", "Digestion"],
@@ -415,9 +397,7 @@
                         "text": "What is the name of the process by which the genetic material from two different parents combines to produce a new individual?",
                         "answers": ["Mitosis", "Meiosis", "Fertilization", "Replication"],
                         "correctAnswer": "C"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text": "What is the difference between facilitated diffusion and active transport?",
                         "answers": ["Facilitated diffusion requires energy while active transport does not",
@@ -459,7 +439,7 @@
         {
             "name": "Maths",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "What is the value of x in the equation 3x + 5 = 14?",
                         "answers": ["3", "4", "6", "9"],
@@ -484,9 +464,7 @@
                         "text": "What is the sum of the interior angles of a triangle?",
                         "answers": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"], 
                         "correctAnswer": "B"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "A store is having a 20% off sale on all items. If a $50 item is on sale, what is the sale price?",
                         "answers": ["$10", "$20", "$30", "$40"],
@@ -511,11 +489,9 @@
                         "text": "Let P be a point outside a circle with center O and radius 6. A tangent line to the circle through P intersects a radius drawn from O at point A. If the length of AP is 8, what is the area of the circle? (Round your answer to the nearest hundredth)",
                         "answers": ["113.10", "125.66", "144.00", "201.06"],
                         "correctAnswer": "A"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
-                        "text": "\\lim_{x \\to 2} \\frac{x^2 - 4}{x - 2}",
+                        "text": "lim x--> 2 (x^2 - 4)(x - 2)",
                         "answers": ["0", "1", "2", "Does not exist"],
                         "correctAnswer": "C"
                     },
@@ -525,12 +501,12 @@
                         "correctAnswer": "B"
                     },
                     {
-                        "text": "What is the derivative of $f(x) = 2x^3 - 4x + 1$",
+                        "text": "What is the derivative of f(x) = 2x^3 - 4x + 1",
                         "answers": ["f'(x) = 6x - 4", "f'(x) = 6x^2 - 4", "f'(x) = 6x^2 - 4x", "f'(x) = 6x^2 - 4x + 1"],
                         "correctAnswer": "B"
                     },
                     {
-                        "text": "What is the solution to the equation $x^2 + 5x + 6 = 0$",
+                        "text": "What is the solution to the equation x^2 + 5x + 6 = 0",
                         "answers": ["x = -6 or x = -1", "x = -2 or x = -3", "x = -6 or x = -2", "x = -4 or x = -2"],
                         "correctAnswer": "B"
                     },
@@ -545,7 +521,7 @@
         {
             "name": "English",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "Which of the following is a noun?",
                         "answers": ["Run", "Quickly", "House", "Beautifully"],
@@ -581,9 +557,7 @@
                                     "They always dance together."
                                    ],
                         "correctAnswer": "C"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "Which of the following sentences contains a dangling modifier?",
                         "answers": ["After finishing his homework, the TV was turned on",
@@ -621,9 +595,7 @@
                                     "The flowers swayed gently in the breeze",
                                     "The rain tapped on the window pane"],
                         "correctAnswer": "A"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text": "Which of the following is an example of an oxymoron?",
                         "answers": ["jumbo shrimp", "pretty ugly", "silent scream", "virtual reality"],
@@ -667,7 +639,7 @@
         {
             "name": "Accounting and Finance",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "Which financial statement reports a company's revenues and expenses?",
                         "answers": ["Balance sheet", "Income statement", "Cash flow statement", "Statement of retained earnings"],
@@ -704,9 +676,7 @@
                                     "To review employee performance",
                                     "To evaluate the company's marketing strategy"],
                         "correctAnswer": "A"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "Which of the following is NOT a type of financial statement?",
                         "answers": ["Balance sheet", "Income statement", "Cash flow statement", "Sales statement"],
@@ -737,9 +707,7 @@
                         "text": "Which of the following financial ratios measures a company's ability to pay off its short-term debt?",
                         "answers": ["Debt-to-equity ratio", "Current ratio", "Gross margin ratio", "Return on equity ratio"],
                         "correctAnswer": "B"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text": "Which of the following methods of inventory valuation assumes that the last items purchased are the first items sold?",
                         "answers": ["LIFO (Last-in, first-out)", "FIFO (First-in, first-out)", "Average cost", "Specific identification"],
@@ -771,7 +739,7 @@
         {
             "name": "Artificial Intelligence",
             "difficulties": {
-                "Easy": [
+                "questions": [
                     {
                         "text": "Which of the following is NOT a type of artificial intelligence?",
                         "answers": ["Machine learning", "Natural language processing", "Robotics", "Data visualization"],
@@ -802,9 +770,7 @@
                         "text": "What is the purpose of reinforcement learning?",
                         "answers": ["To learn from labelled data", "To learn from unstructured data", "To optimize a machine's decision-making process through trialand-error", "To analyse large datasets and identify patterns"],
                         "correctAnswer": "C"
-                    }
-                ],
-                "Medium": [
+                    },
                     {
                         "text": "What is the difference between classification and regression in machine learning?",
                         "answers": ["Classification is the process of predicting a categorical label, while regression is the process of predicting a continuous value",
@@ -844,9 +810,7 @@
                                     "A decision tree and a random forest are the same thing, but with different names",
                                     "A decision tree and a random forest are both single tree-like models, but the random forest is trained using random subsets of the data"],
                         "correctAnswer": "A"
-                    }
-                ],
-                "Hard": [
+                    },
                     {
                         "text":"What is the difference between a Boltzmann machine and a Hopfield network in neural networks?",
                         "answers": ["Boltzmann machines are unsupervised learning models, while Hopfield networks are supervised learning models",
