@@ -1,0 +1,456 @@
+.blob1 {
+    position: absolute;
+    left: 1%;
+    top: 15%;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.blob2 {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.blob3 {
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.blob4 {
+    position: absolute;
+    left: 35%;
+    top: 8%;
+    width: 400px;
+    height: 400px;
+    
+}
+
+.blob5 { 
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    width: 400px;
+    height: 400px;
+}
+
+/*color variables for popup and button*/
+:root{
+    --primary-color:rgba(13, 110, 139, .75);
+    --overlay-color:rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.75s;
+    --clr-neon: hsl(300 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+.menu-wrap .toggler{
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+
+}
+
+.menu-wrap .hamburger{
+    position: absolute;
+    top: 35%;
+    left: 13%;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger > div{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before, .menu-wrap .hamburger > div:after{
+    content:'';
+    position: absolute;
+    z-index: 1; 
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+
+}
+
+.menu-wrap .hamburger > div:after{
+    top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+} 
+
+.menu-wrap .toggler:checked + .hamburger > div:before, .menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed) ;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0,4s ease;
+}
+
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.menu-wrap .menu > div{
+    background-color:var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex:none;
+    align-items: center;
+    justify-content: center ;
+    transform: scale(0); 
+    transition: all 0.4s ease; 
+}
+
+.menu-wrap .menu > div > div{
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vw;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > p {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.quest1{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 7%;
+    top: 37%;
+}
+
+.quest2{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 75%;
+    top: 37%;
+}
+
+.quest3{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 42%;
+    top: 30%;
+}
+
+.quest4{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 16%;
+    top: 75%;
+}
+
+.quest5{
+    font-size: 25px;
+    text-align: justify;
+    color: #fff;
+    position: absolute;
+    font-family: sans-serif;
+    left: 66%;
+    top: 75%;
+}
+
+.neon-button{
+    background-color: transparent;
+    font-size: 2rem;
+    top: 60%;
+    left: 40%;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: currentColor 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0, 0%, 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    position: absolute;
+}
+
+.neon-button::before{
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 250%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1em) rotateX('40deg') scale(1, 0.35);
+    filter: blur(2em);
+}
+
+.quiz-slider .carousel{
+    font-size: 24px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    transform: translateY(185%);
+}
+
+.carousel #image-box {
+    border-radius: 30px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 0 14px;
+    width: 500px;
+}
+
+.image-container#blur.active {
+    filter: blur(5px);
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.image-text h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+.quiz-slider {
+    max-width: 1200px;
+    padding: 0 35px;
+    position: relative;
+}
+
+.quiz-slider i {
+    top: 235%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.quiz-slider i:first-child {
+    left: -23px;
+    display: none;
+}
+
+.quiz-slider i:last-child {
+    right: -23px;
+}
+
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100%);
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img{
+        width: 50%;
+    }
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 10, 255) 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+#saveScoreBtn {
+    border: none;
+}
+
+.fa-home {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(28, 26, 26);
+}

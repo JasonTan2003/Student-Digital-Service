@@ -1,12 +1,12 @@
 .support-section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: #2F303A;
 }
 
 #get-in-touch, #chat, #book-meeting, #online-meeting, #f2f-meeting, #contact-us-below {
-    background-color: darkorange;
+    background: #f7797d;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,7 +18,7 @@
     font-stretch: normal;
     text-align: center;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0.5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,13 +48,13 @@
   
 #online-meeting {
     top: 75%;
-    left: 25%;
+    left: 30%;
     transform: translate(-50%, -50%);
 }
   
 #f2f-meeting {
     top: 75%;
-    left: 85%;
+    left: 80%;
     transform: translate(-50%, -50%);
 }
   
@@ -71,7 +71,7 @@
     width: 10%;
     height: 5%;
     left: 10%;
-    top: 936px;
+    top: 110%;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -81,7 +81,7 @@
     width: 10%;
     height: 5%;
     left: 35%;
-    top: 936px;
+    top: 110%;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -91,7 +91,7 @@
     width: 10%;
     height: 5%;
     left: 60%;
-    top: 936px;
+    top: 110%;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -104,7 +104,7 @@
     width: 393px;
     height: 92px;
     left: 1200px;
-    top: 930px;
+    top: 110%;
 
     font-family: 'Poppins';
     font-style: normal;
