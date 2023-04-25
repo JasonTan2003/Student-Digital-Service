@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Copy files to destination directory
         run: |
-          powershell.exe -Command "Copy-Item -Path G:\\adir.hull.ac.uk\home\662\662233\Desktop\actions-runner* -Destination C:\inetpub\wwwroot -force"
+          powershell.exe -Command "Copy-Item -Path c:\actions-runner* -Destination C:\inetpub\wwwroot -force"
         
