@@ -1,6 +1,7 @@
 /*Search bar Find job page*/
 .input-wrapper {
-    width: 65%;
+    width: 75%;
+    height: 30px;
     display: flex;
     align-items: center;
     position: absolute;
@@ -14,16 +15,18 @@
     z-index: 1;
 }
   
-input {
+.input-wrapper input {
     margin: 0 0.5rem 0 0.5rem;
-    width: 100%;
+    width: 90%;
+    height: 1%;
     border: none;
-    outline: none;
-    /*background: linear-gradient(to right, #662D8C, #ED1E79);*/
+    outline: none;  
     background: transparent;
     color: white;
+    padding: 10px;
+    font-size: 12px;
 }
-  
+
 ::placeholder {
     color: #f0b2a8;
     font-size: 1rem;
