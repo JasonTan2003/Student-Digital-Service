@@ -1,0 +1,147 @@
+.title h1 {
+    position: absolute;
+    text-align: left;
+    font-size: 40px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 900px;
+    top: 100px;
+}
+  
+.small h3 {
+    position: absolute;
+    text-align: left;
+    font-size: 30px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 900px;
+    top: 200px;
+}
+  
+.small p {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 1008px;
+    top: 260px;
+}
+  
+.small1 h3 {
+    position: absolute;
+    text-align: left;
+    font-size: 30px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 900px;
+    top: 380px;
+}
+  
+.small1 p {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 1008px;
+    top: 430px;
+}
+  
+.small1 ul {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 1008px;
+    top: 460px;
+}
+  
+.small2 h3 {
+    position: absolute;
+    text-align: left;
+    font-size: 30px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 900px;
+    top: 570px;
+}
+  
+.small2 p {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 1008px;
+    top: 630px;
+}
+  
+.small3 h3 {
+    position: absolute;
+    text-align: left;
+    font-size: 30px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 900px;
+    top: 900px;
+}
+  
+.small3 p {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 1008px;
+    top: 960px;
+}
+  
+.small3 ol {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 1008px;
+    top: 1080px;
+}
+  
+.small4 p {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    left: 100px;
+    margin-top: 30px;
+    line-height: 2.0;
+    width: 1008px;
+    top: 1860px;
+}
+  
+a {
+    color: hotpink;
+}

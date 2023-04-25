@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <a href="/Html/Home.html" class="logo">
+            <img href="/Html/Home.html" src="Images/Jobhive Logo.png" alt="Jobhive Logo" />
+        </a>
+        <nav class="navigation">
+            <a href="/Html/Findjob.html">Find a Job</a>
+            <a href="/Html/CVguide.html">CV Guide</a>
+            <a href="/Html/Questions.html">Questions</a>
+            <a href="/Html/Support.html">Support</a>
+            <button class="btnLogin-popup"><i class="fa-regular fa-user"></i> Account</button>
+        </nav>
+    </header>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">Question Text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Answer</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Answer</label>
+            </li>
+          </ul>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+    <script src="Engineeringquiz.js"></script>
+</body>
+</html>
