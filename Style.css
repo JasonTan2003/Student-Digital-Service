@@ -95,7 +95,7 @@ html {
     overflow: hidden;
     transform: scale(0);
     transition: transform .5s ease, height .2s ease;
-    z-index: 2;
+    z-index: 3;
   }
   
   .wrapper.active-popup {
@@ -720,6 +720,7 @@ html {
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
+    z-index: 2;
   }
   
   .menu-wrap .hamburger>div:before,
@@ -801,6 +802,7 @@ html {
     max-height: 100vw;
     opacity: 0;
     transition: opacity 0.4s ease;
+    z-index: 3;
   }
   
   .menu-wrap .menu>div>div>p {
@@ -1398,17 +1400,6 @@ html {
       width: 50%;
     }
   }
-  
-  /* h1 {
-    font-size: 5.4rem;
-    color: #fff;
-    margin-bottom: 5rem;
-  }
-  
-  h2 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-  } */
   
   .container {
     width: 100vw;
